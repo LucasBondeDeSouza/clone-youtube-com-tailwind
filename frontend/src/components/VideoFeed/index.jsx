@@ -18,7 +18,7 @@ export default () => {
     ];
 
     return (
-        <main className="flex-1 ml-60 p-6">
+        <main className="flex-1 ml-0 lg:ml-60 p-6">
             <div className="flex gap-3 mb-6 overflow-x-auto pb-2 pt-4">
                 <button className="px-3 py-1 bg-gray-900 text-white rounded-lg text-sm whitespace-nowrap cursor-pointer">Tudo</button>
                 <button className="px-3 py-1 bg-gray-100 text-black rounded-lg text-sm whitespace-nowrap cursor-pointer">Música</button>
@@ -30,7 +30,7 @@ export default () => {
                 <button className="px-3 py-1 bg-gray-100 text-black rounded-lg text-sm whitespace-nowrap cursor-pointer">Esportes</button>
             </div>
 
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {videos.map((video, index) => (
                     <article className="cursor-pointer">
                         <div className="relative bg-gray-200 rounded-xl overflow-hidden">

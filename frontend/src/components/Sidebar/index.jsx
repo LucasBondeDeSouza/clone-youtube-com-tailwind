@@ -1,10 +1,10 @@
 import React from "react";
 
-export default () => {
+export default ({ showSidebar }) => {
 
     return (
         <div className="flex pt-14">
-            <aside className="fixed left-0 top-14 w-60 bg-white overflow-y-auto py-6">
+            <aside className={`fixed left-0 bottom-0 top-14 w-0 lg:w-60 bg-white overflow-y-auto py-6 z-10 ${showSidebar ? 'w-60' : 'w-0'}`}>
                 <nav className="space-y-1">
                     <a href="#" className="flex items-center gap-6 px-6 py-2 bg-gray-100">
                         <i className="ri-home-4-fill text-xl"></i>
