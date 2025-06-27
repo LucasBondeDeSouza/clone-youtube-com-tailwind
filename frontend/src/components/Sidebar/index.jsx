@@ -23,6 +23,11 @@ export default ({ showSidebar }) => {
 
                     <hr className="mx-6 my-3 text-gray-200" />
 
+                    <a href="#" className="flex items-center hover:bg-gray-100">
+                        <h3 className="px-6 py-2 text-lg font-semibold text-black">Você</h3>
+                        <i class="ri-arrow-right-s-line text-xl"></i>
+                    </a>
+
                     <a href="#" className="flex items-center gap-6 px-6 py-2 hover:bg-gray-100">
                         <i className="ri-history-line text-xl"></i>
                         <span className="text-sm font-medium">Histórico</span>
@@ -38,9 +43,14 @@ export default ({ showSidebar }) => {
                         <span className="text-sm font-medium">Vídeos marcados</span>
                     </a>
 
+                    <a href="#" className="flex items-center gap-6 px-6 py-2 hover:bg-gray-100">
+                        <i class="ri-scissors-line text-xl"></i>
+                        <span className="text-sm font-medium">Seus clipes</span>
+                    </a>
+
                     <hr className="mx-6 my-3 text-gray-200" />
 
-                    <h3 className="px-6 py-2 text-sm font-medium text-gray-900">Inscrições</h3>
+                    <h3 className="px-6 py-2 text-lg font-semibold text-black">Inscrições</h3>
 
                     <a href="#" className="flex items-center gap-6 px-6 py-2 hover:bg-gray-100">
                         <div className="w-6 h-6 bg-red-500 rounded-full"></div>

@@ -32,7 +32,7 @@ export default ({ handleClickSidebar }) => {
                 </button>
             </form>
 
-            <div className="flex items-center gap-1">
+            <div className="flex md:hidden items-center gap-1">
                 <button className="p-2 hover:bg-gray-100 rounded-full cursor-pointer">
                     <i className="ri-search-line text-lg"></i>
                 </button>

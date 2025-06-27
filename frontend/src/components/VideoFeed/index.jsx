@@ -17,8 +17,23 @@ export default () => {
         { title: "TypeScript Tips & Tricks - Produtividade no Próximo Nível", channel: "TS Brasil", views: "145 mil", time: "há 6 dias", duration: "19:45", color: "rose", isLive: false }
     ];
 
+    const colorMap = {
+        red: "bg-red-500",
+        blue: "bg-blue-500",
+        green: "bg-green-500",
+        purple: "bg-purple-500",
+        yellow: "bg-yellow-500",
+        pink: "bg-pink-500",
+        indigo: "bg-indigo-500",
+        orange: "bg-orange-500",
+        teal: "bg-teal-500",
+        cyan: "bg-cyan-500",
+        lime: "bg-lime-500",
+        rose: "bg-rose-500",
+    };
+
     return (
-        <main className="flex-1 ml-0 lg:ml-60 p-6">
+        <main className="flex-1 ml-0 lg:ml-60 py-2 px-6">
             <div className="flex gap-3 mb-6 overflow-x-auto pb-2 pt-4">
                 <button className="px-3 py-1 bg-gray-900 text-white rounded-lg text-sm whitespace-nowrap cursor-pointer">Tudo</button>
                 <button className="px-3 py-1 bg-gray-100 text-black rounded-lg text-sm whitespace-nowrap cursor-pointer">Música</button>
@@ -38,11 +53,13 @@ export default () => {
                             <span className="absolute bottom-2 right-2 bg-black bg-opacity-80 text-white text-xs px-1 rounded">{video.duration}</span>
                         </div>
 
-                        <div className="flex gap-3 mt-3">
+                        <div className="flex items-start gap-3 mt-3">
+                            <div className={`size-8 rounded-full shrink-0 ${colorMap[video.color] || "bg-gray-500"}`}></div>
+
                             <div>
                                 <h3 className="font-medium text-base">{video.title}</h3>
                                 <p className="text-sm text-gray-600 mt-1">{video.channel}</p>
-                                <p className="text-sm text-gray-600">{video.views}</p>
+                                <p className="text-sm text-gray-600">{video.views} visualizações</p>
                             </div>
                         </div>
                     </article>
